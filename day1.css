@@ -77,3 +77,14 @@ img{
     display:flex;
     align-items:center;
 }
+/* weather */
+.weather {
+    display: none;
+}
+/* error */
+.error{
+    margin: 15px 0 0 0 ;
+    padding:5px;
+    text-align:left;
+    display:none;
+}
