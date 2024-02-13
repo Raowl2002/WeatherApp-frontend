@@ -11,8 +11,8 @@ async function getData(cityName){
         const weather =data.weather[0].main.toLowerCase();
         console.log(weather);
         document.querySelector(".weather img").setAttribute("src",`images/${weather}.png`);
-        document.querySelector(".weather h2").textContent=`${cityName[0].toUpperCase()+cityName.slice(1).toLowerCase()} °C`;
-        document.querySelector(".weather .temp").textContent = `${data.main.temp}`;
+        document.querySelector(".weather h2").textContent=`${cityName[0].toUpperCase()+cityName.slice(1).toLowerCase()} `;
+        document.querySelector(".weather .temp").textContent = `${Math.round(data.main.temp)} °C`;
         document.querySelector(".col1 .humidity").textContent =`${data.main.humidity}%`;
         document.querySelector(".col1 .wind").textContent =`${data.wind.speed} km/hr` 
     }catch(error){
